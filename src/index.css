@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputField {
+    @apply rounded-md
+     border
+     border-stone-400
+     px-4
+     py-0.5
+     text-sm
+     transition-all duration-300
+     focus:outline-none
+     focus:ring
+     focus:ring-lime-300
+     md:px-6 md:py-1;
+  }
+
+  .checkbox {
+    @apply my-4 mr-1 h-5 w-5
+     accent-lime-400 
+     ring-offset-2 
+     focus:outline-none 
+     focus:ring 
+     focus:ring-lime-400;
+  }
+
+  .loader {
+    width: 45px;
+    height: 45px; /* Set height for a square loader */
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background:
+      var(--c) 0% 50%,
+      var(--c) 50% 50%,
+      var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: rotate 1s infinite linear;
+    border-radius: 50%; /* Optional: For a circular loader */
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background:
+      var(--c) 0% 50%,
+      var(--c) 50% 50%,
+      var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  @keyframes loading {
+    20% {
+      background-position:
+        0% 0%,
+        50% 50%,
+        100% 50%;
+    }
+    40% {
+      background-position:
+        0% 100%,
+        50% 0%,
+        100% 50%;
+    }
+    60% {
+      background-position:
+        0% 50%,
+        50% 100%,
+        100% 0%;
+    }
+    80% {
+      background-position:
+        0% 50%,
+        50% 50%,
+        100% 100%;
+    }
+  } */
+}
+
+/* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
