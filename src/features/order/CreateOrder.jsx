@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import { useDispatch, useSelector } from "react-redux";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
@@ -9,7 +10,7 @@ import {
   getUserName,
   addOrderToHistory,
 } from "../cart/cartSlice";
-import Button from "../../ui/Button";
+import Button from "../../ui/button";
 import EmptyCart from "../cart/EmptyCart";
 import store from "../../store";
 import { formatCurrency } from "../../utils/helpers";

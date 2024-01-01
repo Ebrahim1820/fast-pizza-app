@@ -7,7 +7,7 @@ function Username() {
 
   if (!userName) return null;
   return (
-    <div className="hidden px-2 py-2 text-sm font-bold text-stone-800 md:block">
+    <div className="hidden px-2 py-2 text-lg font-bold text-stone-800 md:block">
       <p>Hey {userName}😊</p>
     </div>
   );

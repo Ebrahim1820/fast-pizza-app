@@ -25,24 +25,24 @@ function SearchOrder() {
         >
           <input
             className="
-            w-28 sm:w-64 
-            ml-2 px-2 
-            rounded-[20px]
-            bg-lime-100 
+            ml-2 w-28 
+            rounded-[20px] bg-lime-100 
+            px-2
+            text-sm 
             text-stone-800
-             text-sm  
-             focus:outline-none 
-             focus:ring
-             focus:ring-lime-300
-             placeholder:text-stone-400 
-             sm:focus:w-72 
-             transition-all 
-             duration-300"
-            placeholder="Search order.."
+             transition-all  
+             duration-300 
+             placeholder:text-stone-400
+             focus:outline-none
+             focus:ring 
+             focus:ring-lime-300 
+             sm:w-64 
+             sm:focus:w-72"
+            placeholder="Search order by Id.."
             value={query}
             onChange={handleSearch}
           />{" "}
-          <button className="font-semibold text-sm text-stone-400  hover:text-lime-400  ">
+          <button className="text-sm font-semibold text-stone-400  hover:text-lime-400  ">
             <i className="fa fa-search  px-1"></i>
           </button>
         </form>
