@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import CreateUser from "../features/user/CreateUser";
-import Button from "./button";
+import Button from "./Button";
 import HistoryOrder from "./HistoryOrder";
 
 //

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import LinkButton from "../../ui/LinkButton";
-import Button from "../../ui/button";
+import Button from "../../ui/Button";
 import CartItem from "./CartItem";
 import { clearCart, getCart, getUserName } from "./cartSlice";
 import { useDispatch, useSelector } from "react-redux";

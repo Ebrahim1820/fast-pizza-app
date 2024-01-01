@@ -10,7 +10,7 @@ import {
   getUserName,
   addOrderToHistory,
 } from "../cart/cartSlice";
-import Button from "../../ui/button";
+import Button from "../../ui/Button";
 import EmptyCart from "../cart/EmptyCart";
 import store from "../../store";
 import { formatCurrency } from "../../utils/helpers";
